@@ -1,0 +1,163 @@
+body { 
+	//background: #becccc; 
+	//color: #fff; 
+	text-align: center; 
+	letter-spacing: 2px; 
+	padding:20px;
+	vertical-align:middle;
+}
+
+.hide{
+	display:none;
+}
+
+@font-face
+{
+font-family: mySTHupo;
+src: url('');
+}
+
+.vertical-text{
+	vertical-align: middle;    
+    width: 21px;
+    color: red;
+    display: inline-block;
+	font-size: 21px;
+	padding: 10px 0;
+	font-family:initial;
+	line-height:25px;
+}
+
+.action-sheet-backdrop {
+    -webkit-transition: background-color 150ms ease-in-out;
+    transition: background-color 150ms ease-in-out;
+    position: fixed;
+    top: 0;
+    left: 0;
+    z-index: 11;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0);
+ 
+}
+  
+ .action-sheet-backdrop.active {
+    background-color: rgba(0, 0, 0, 0.4);
+     
+}
+  
+ .action-sheet-wrapper {
+    -webkit-transform: translate3d(0, 100%, 0);
+    transform: translate3d(0, 100%, 0);
+    -webkit-transition: all cubic-bezier(0.36, 0.66, 0.04, 1) 500ms;
+    transition: all cubic-bezier(0.36, 0.66, 0.04, 1) 500ms;
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    width: 100%;
+    max-width: 800px;
+    margin: auto;
+}
+  
+ .action-sheet-up {
+    -webkit-transform: translate3d(0, 0, 0);
+    transform: translate3d(0, 0, 0);
+}
+  
+ .action-sheet {
+    margin-left: 8px;
+    margin-right: 8px;
+    width: auto;
+    z-index: 11;
+    overflow: hidden;
+}
+  
+ .action-sheet .button {
+    display: block;
+    padding: 1px;
+    width: 100%;
+    border-radius: 0;
+    border-color: #d1d3d6;
+    background-color: transparent;
+    color: #007aff;
+    font-size: 21px;
+}
+  
+ .action-sheet .button:hover {
+    color: #007aff;
+}
+  
+ .action-sheet .button.destructive {
+    color: #ff3b30;
+}
+  
+ .action-sheet .button.destructive:hover {
+    color: #ff3b30;
+}
+  
+ .action-sheet .button.active,  .action-sheet .button.activated {
+    box-shadow: none;
+    border-color: #d1d3d6;
+    color: #007aff;
+    background: #e4e5e7;
+}
+  
+ .action-sheet-has-icons .icon {
+    position: absolute;
+    left: 16px;
+}
+  
+ .action-sheet-title {
+    padding: 16px;
+    color: #8f8f8f;
+    text-align: center;
+    font-size: 13px;
+}
+  
+ .action-sheet-group {
+    margin-bottom: 8px;
+    border-radius: 4px;
+    background-color: #fff;
+    overflow: hidden;
+}
+  
+ .action-sheet-group .button {
+    border-width: 1px 0px 0px 0px;
+}
+  
+ .action-sheet-group .button:first-child:last-child {
+    border-width: 0;
+}
+  
+ .action-sheet-options {
+    background: white;
+    max-height: 520px;
+    overflow-y: auto;
+}
+  
+ .action-sheet-cancel .button {
+    font-weight: 500;
+	padding: 10px;
+}
+  
+ .action-sheet-open {
+    pointer-events: none;
+}
+  
+ .action-sheet-open.modal-open .modal {
+    pointer-events: none;
+}
+  
+ .action-sheet-open .action-sheet-backdrop {
+    pointer-events: auto;
+    z-index: 1111;
+}
+  
+ .action-sheet .action-sheet-title, .platform-android .action-sheet .button {
+    text-align: center;
+}
+  
+ .action-sheet-cancel {
+    display: block;
+}
